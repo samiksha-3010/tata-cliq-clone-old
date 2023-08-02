@@ -1,11 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import { Routes } from 'react-router-dom';
+import Navbar from './Component/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <h2>MY first react application tata click</h2>
-      <header className="App-header">
+    <div>
+    <Navbar/>
+       <Routes>
+
+
+       </Routes>
+
+
+
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -18,7 +27,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
