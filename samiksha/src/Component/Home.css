@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin-top: 6%;
+}
+.maincontainer {
+    /* height: 50vh; */
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-top: 30px;
+}
+
+.maincontainer>img {
+    height: 100%;
+    width: 100%;
+}
+
+#quick-procducts {
+    height: 20vh;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+}
+
+.quick-procducts-align {
+    /* height: 95%; */
+    width: 95%;
+    /* border: 1px solid black; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.quick-procducts-card {
+    height: 70%;
+    width: 9%;
+    /* border:1px solid black; */
+}
+
+.quick-procducts-card>img{
+    height:100%;
+    width: 100%;
+}
+/* .quick-procducts-card>img:hover{
+transform: scale(1.05);
+transition: 500ms;
+} */
+#bank-banner{
+    height:20vh;
+    width:100%;
+    /* border:1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bank-banner-imageHolder{
+    height:50%;
+    width:25%;
+    /* border:1px solid black; */
+}
+.bank-banner-imageHolder>img{
+    height:100%;
+    width:100%;
+}
+.title-image-backgroung {
+    height: 20vh;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+.title-image-backgroung-imageHolder {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+
+  
+
+
+.title-image-backgroung-imageHolder>img {
+    height: 100%;
+    width: 100%;
+}
+
+.ondemand-products {
+    height: 60vh;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+}
+
+.ondemand-products-card {
+    height: 90%;
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ondemand-products-card-imageHolder {
+    height: 95%;
+    width: 22%;
+    /* border: 1px solid black; */
+}
+
+.ondemand-products-card-imageHolder>img {
+    height: 100%;
+    width: 100%;
+}
+
+.feature-brands{
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+.feature-Brands{
+    width: 80%;
+    /* border: 1px solid black; */
+   display: flex;
+   flex-wrap: wrap;
+    margin: auto;
+}
+.feature-Brands>div{
+    width: 42%;
+    /* border: 1px solid black; */
+    height: 300px;
+    margin-left: 25px;
+    margin-top: 30px;
+
+}
+.feature-Brands>div:hover{
+    transform: scale(1.05);
+    transition: 500ms;
+}
+.feature-Brands>div>img{
+    width: 100%;
+    /* border: 1px solid black; */
+    height: 300px;
+}
