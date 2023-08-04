@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const Register = () => {
-     const [userData,setUserData] = useState({name: "",email: "",password: "",role: "Byuer"})
+     const [userData,setUserData] = useState({name: "",email: "",password: "",role: "Buyer"})
      const router = useNavigate();
      const handleChange = (event) => {
         setUserData({ ...userData, [event.target.name]: event.target.value })
@@ -19,6 +19,7 @@ const Register = () => {
                 name: userData.name,
                 email: userData.email,
                 password: userData.password,
+                role:userData.role,
                 cart : []
             };
             // console.log(array, "-array")
@@ -36,7 +37,7 @@ const Register = () => {
         }
     }
      function selectRole (event){
-        console.log(event.target.value = "-role")
+        // console.log(event.target.value = "-role")
      setUserData({...userData,["role"]: event.target.value})
      }
 
@@ -49,7 +50,7 @@ const Register = () => {
                 <input type='text' name='name' onChange={handleChange} /><br />
                 <label>Slect Role:</label><br />
                 <select onChange ={selectRole}>
-                    <option value="Byuer">Byuer</option>
+                    <option value="Buyer">Byuer</option>
                     <option value= "Seller">Seller</option>
                 </select><br/>
                 <label>Email</label><br />

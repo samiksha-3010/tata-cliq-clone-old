@@ -21,19 +21,19 @@ const Cart = () => {
         }
     }, [userCart])
 
-    useEffect(() =>{
-        const user = JSON.parse(localStorage.getItem("Current-user"))
-        if (user?.role  == "seller"){
-            alert("Access only to buyer")
-            // router("/")
-        }else{
-            alert("you are not a logged user")
-            router('/login')
-        }
-    },[])
+    // useEffect(() =>{
+    //     const user = JSON.parse(localStorage.getItem("Currrent-user"))
+    //     if (user?.role  == "seller"){
+    //         alert("Access only to buyer")
+    //         // router("/")
+    //     }else{
+    //         alert("you are not a logged user")
+    //         router('/login')
+    //     }
+    // },[])
 
     useEffect(() => {
-        const user = JSON.parse(localStorage.getItem("Current-user"));
+        const user = JSON.parse(localStorage.getItem("Currrent-user"));
         if (user?.email) {
             const allUsers = JSON.parse(localStorage.getItem("Users"));
             for (var i = 0; i < allUsers.length; i++) {

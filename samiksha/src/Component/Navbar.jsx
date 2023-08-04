@@ -19,7 +19,7 @@ const Navbar = () => {
 
     const router = useNavigate()
     function togo() {
-        router('/login/')
+        router('/login')
     }
     function home() {
         router('/home')
@@ -74,9 +74,9 @@ const Navbar = () => {
                         <p>Gift Card</p>
                         <p>Cliq Care </p>
                         <p>Track Order</p>
-                        <p onClick={() => router("/profile")}>My Profile</p>
+                        <p onClick={() => router('/profile')}>My Profile</p>
                         <p onClick={togo}>SignIn/SighUp</p>
-                        <p onClick={() => router("/addproduct")}> Add product</p>
+                        <p onClick={() => router('/addproduct')}> Add product</p>
                         {/* <p>All Product</p> */}
                         <i class="fa-solid fa-chevron-down"></i>
                         {/* <div id='profile-section'>
