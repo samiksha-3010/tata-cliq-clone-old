@@ -22,10 +22,10 @@ function App() {
        <Route exact path='/login' element={<Login/>} />
        <Route exact path='/Register' element={<Register/>}/>
        <Route exact path='addproduct'element={<AddProduct/>}/>
-       <Route exact path='allproduct'element={<AllProduct/>}/>
-       <Route exact path='profile'element={<Profile/>}/>
-       <Route exact path='cart'element={<Cart/>}/>
-       <Route exact path='multipleProduct'element={<MultipleProduct/>}/>
+       <Route exact path='/allproduct'element={<AllProduct/>}/>
+       <Route exact path='/profile'element={<Profile/>}/>
+       <Route exact path='/cart'element={<Cart/>}/>
+       <Route exact path='/multipleProduct/:id'element={<MultipleProduct/>}/>
 
 
        </Routes>

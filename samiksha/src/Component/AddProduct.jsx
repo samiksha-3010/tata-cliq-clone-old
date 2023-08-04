@@ -53,7 +53,7 @@ const AddProduct = () => {
              <label  style={{marginLeft: "30px"}}>Product Price:</label><br/>
              <input style={{width:"50%",height:"40px",marginLeft: "30px" }} value={productData.price} type='number'  onChange={handleChange}  name='price'/><br/>
              <label style={{marginLeft: "30px"}}>Product cetegory:</label><br/>
-             <select  style={{width:"50%",height:"40px",marginLeft: "30px" }} onChangeCapture={selectRole}>
+             <select  style={{width:"50%",height:"40px",marginLeft: "30px" }} onChange ={selectRole}>
                <option value="other">Other</option>
                <option value="Mens">Mens</option>
                <option value="Womens">Womens</option>

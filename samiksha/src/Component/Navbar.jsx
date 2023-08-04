@@ -75,7 +75,7 @@ const Navbar = () => {
                         <p>Cliq Care </p>
                         <p>Track Order</p>
                         <p onClick={togo}>SignIn/SighUp</p>
-                        <p>Add product</p>
+                        <p     onClick={() => router("/addproduct")}> Add product</p>
                         {/* <p>All Product</p> */}
                         <i class="fa-solid fa-chevron-down"></i>
                         {/* <div id='profile-section'>
@@ -92,7 +92,7 @@ const Navbar = () => {
                    
                     <div id='icon'>
                         <div id='child1' onMouseEnter={open} onMouseLeave={close}>
-                            <p>Cetegries</p>
+                            <p  onClick={() => router("/allproduct")}>Cetegries</p>
                             <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         {/* ********drop down******** */}
