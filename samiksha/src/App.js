@@ -8,7 +8,6 @@ import Register from './Component/Register';
 import Login from './Component/Login';
 import AddProduct from './Component/AddProduct';
 import AllProduct from './Component/AllProduct';
-
 import Cart from './Component/Cart';
 import Profile from './Component/Profile';
 import MultipleProduct from './MultipleProduct';
