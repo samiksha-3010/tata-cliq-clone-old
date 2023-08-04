@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { router, useParams } from "react-router-dom";
-
+import './MultipleProduct.css'
 
 
 import { useNavigate } from "react-router-dom";
@@ -111,7 +111,7 @@ const SinglePro = () => {
     }
   }
   return (
-    <div  style={{width: "25%",border: "2px solid red"}}>
+    <div  style={{width: "100%",border: "2px solid green" }}>
       <h2  style={{color: "red"}}>Single Product</h2>
       {allowUpdate ? (
         <form onSubmit={handleSubmit}>
@@ -165,11 +165,26 @@ const SinglePro = () => {
       ) : (
         []
       )}
-      <div  style={{width: "25%",border: "2px solid red"}}>
-        <img   style={{width: "25%",border: "2px solid red"}} src={single.image}  />
-        <h2>Name:{single.name}</h2>
+      <div  style={{width: "90%",border: "2px solid yellow", display:"flex"}}>
+    
+        <img    src={single.image}/>
+       
+
+        <div  style={{border: "red", width: "10%" , }}>
+        <h2   >Name:{single.name}</h2>
         <h2>Price:{single.price} </h2>
         <p>Cetegory:{single.Cetegory}</p>
+        <button  style={{ width:"100%", height: "40px" ,backgroundColor: "black", color: "white" }}  onClick={addcart}>add to cart</button>
+      
+        
+        </div>
+        {/* ************************************* */}
+       
+
+
+
+
+
       </div>
       {userData?.role === "seller" ? (
         <div>
@@ -177,10 +192,63 @@ const SinglePro = () => {
         </div>
       ) : (
         <div>
-          <button onClick={addcart}>add to cart</button>
+               <div id='more-puma'>
+                                    <h2>More From Puma</h2>
+                                    <div id='fallow'> + Fallow Brand</div>
+
+
+                                  </div>
+                                  <div id='imagediv'>
+                                    <div>
+                                  <img src='https://img.tatacliq.com/images/i7/97Wx144H/MP000000009494526_97Wx144H_202105042219391.jpeg'/>
+                                  <p>Monte Carlo Black Regular Fit Self Design Cardigan
+                                      ₹2789
+                                     ₹3985(30% off)</p>
+                                    </div>
+                                    <div>
+                                    <img src='https://img.tatacliq.com/images/i8/97Wx144H/MP000000013765836_97Wx144H_202207130826031.jpeg'/>
+
+                                    <p>Monte Carlo Black Regular Fit Self Design Cardigan
+                                      ₹2789
+                                     ₹3985(30% off)</p>
+                                    </div>
+                                    <div>
+                                    <img src='https://img.tatacliq.com/images/i8/97Wx144H/MP000000012047259_97Wx144H_202202070409221.jpeg'/>
+
+                                    <p>Monte Carlo Black Regular Fit Self Design Cardigan
+                                      ₹2789
+                                     ₹3985(30% off)</p>
+                                    </div>
+                                    <div>
+                                    <img src='https://img.tatacliq.com/images/i8/97Wx144H/MP000000014807504_97Wx144H_202210092344481.jpeg'/>
+
+                                    <p>Monte Carlo Black Regular Fit Self Design Cardigan
+                                      ₹2789
+                                     ₹3985(30% off)</p>
+                                    </div>
+                                    <div>
+                                    <img src='https://img.tatacliq.com/images/i8/97Wx144H/MP000000014807582_97Wx144H_202210092346511.jpeg'/>
+
+                                    <p>Monte Carlo Black Regular Fit Self Design Cardigan
+                                      ₹2789
+                                     ₹3985(30% off)</p>
+                                    </div>
+                                    
+                                  </div>
+
+        
+        
         </div>
       )}
+    
+
+    
     </div>
+    // ************************
+
+
+
+
   );
 };
 
