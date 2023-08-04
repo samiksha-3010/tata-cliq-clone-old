@@ -41,7 +41,7 @@ const AllProduct = () => {
       
       </div>
    
-    <div style={{width: "100%"  , border: "5px solid blue " ,display:"flex ",justifyContent: "space-around"}}>
+    <div style={{width: "100%"  , border: "1px solid black " ,display:"flex ",justifyContent: "space-around"}}>
      <div style={{width: "100%" , border: "2px solid black"}} >filter
      
      {/* //////************ */ }
@@ -182,11 +182,11 @@ const AllProduct = () => {
     <div>
         {!IsProductExist? <div>No Product</div>
       : 
-      <div style={{display: "flex", justifyContent: "space-around",  border:"5px solid yellow", flexWrap:"wrap", width: "100%" ,  }}>
+      <div style={{display: "flex", justifyContent: "space-around",  border:"1px solid gray", flexWrap:"wrap", width: "100%" ,  }}>
       {/* <h2>All Product</h2> */}
 
       {products && products.map((pro) =>(
-     <div  onClick= { ()=>redirect (pro.id)} style={{width:"20%", border:"2px solid red", height: "400px", }}  key={pro.id}>
+     <div  onClick= { ()=>redirect (pro.id)} style={{width:"20%", border:"2px solid gray", height: "400px", }}  key={pro.id}>
      <img  style ={{width:"100%" , height:"300px"}} src={pro.image}/>
 
      <h3>Name:{pro.name} </h3>
