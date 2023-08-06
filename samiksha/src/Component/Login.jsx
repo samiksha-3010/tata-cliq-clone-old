@@ -48,7 +48,7 @@ const Login = () => {
                 <input style={{width:"50%",height: "40px",marginLeft: "50px" ,border: "none", borderBottom: "1px solid gray"}} value={userData.email} type='email' onChange={handleChange} name="email" /><br />
                 <label  style={{marginLeft: "50px",}}>Password</label><br />
                 <input  style={{width:"50%",height: "40px",marginLeft: "50px", border: "none", borderBottom: "1px solid gray"}} value={userData.password} type='password' onChange={handleChange} name='password' /><br />
-                <p  style={{marginLeft: "30px", marginTop:"30px"}}>By Counting you agree to our <span style={{color: "red"}}>Term and use</span> and <span style={{color: "red"}}>Privacy& Policy</span></p>
+                <p style={{marginLeft: "30px", marginTop:"30px"}}>By Counting you agree to our <span style={{color: "red"}}>Term and use</span> and <span style={{color: "red"}}>Privacy& Policy</span></p>
                 <span  style={{marginLeft: "50px"}}>haven't register here <p style={{ color: "red",marginLeft: "50px"}}>New Register?</p></span>
                 <input style={{width: "50%", height: "40px", borderRadius: "50px", backgroundColor: "red", color: "white", marginLeft: "70px", marginTop: "50px"}} type='submit' value="Login" /><br />
 
