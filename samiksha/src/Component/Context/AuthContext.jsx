@@ -55,8 +55,6 @@
 //     )
 // }
 
-
-
 import axios from "axios";
 import { createContext, useEffect, useReducer } from "react";
 
@@ -104,6 +102,5 @@ const reducer = (state, action) => {
     )
 
 }
-
 export default AuthContext;
 
